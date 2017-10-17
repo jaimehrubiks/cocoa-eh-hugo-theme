@@ -156,6 +156,17 @@ section.header .name {
   color: #333333;
   color: #555555;
 }
+section.header .subname {
+  font-size: 20px;
+  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #848484;
+  margin-left: 15px;
+  text-decoration: italic;
+}
 section.header nav {
   margin-bottom: 16px;
 }
@@ -507,11 +518,7 @@ section.main .content .markdown a code:hover {
   text-decoration: underline;
 }
 section.main .content .markdown p {
-  {{if .Site.Params.align_left}}
-  text-align: left;
-  {{else}}
   text-align: justify;
-  {{end}}
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -577,7 +584,7 @@ section.main .content .markdown figure {
   margin-bottom: 1em;
 }
 section.main .content .markdown figure img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   max-width: 100%;
   display: block;
